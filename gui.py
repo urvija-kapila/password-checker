@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from checker import password_strength
 from breach import check_breach
+from generator import generate_password
 
 # GUI window
 window = tk.Tk()
@@ -49,9 +50,31 @@ def analyze_password():
         for r in remarks:
             output_box.insert(tk.END, f"- {r}\n")
 
-# Button
+def generate_and_fill():
+    pwd = generate_password()
+    password_entry.delete(0, tk.END)
+    password_entry.insert(0, pwd)
+
+    output_box.delete(1.0, tk.END)
+    output_box.insert(tk.END, "✔️ Secure password generated.\nClick 'Analyze Password' to evaluate it.\n")
+
+
+# analyse Button
 btn = tk.Button(window, text="Analyze Password", font=("Arial", 12, "bold"),
                 command=analyze_password, bg="#0A84FF", fg="white", width=20)
 btn.pack(pady=5)
+
+#generate button
+gen_btn = tk.Button(
+    window,
+    text="Generate Strong Password",
+    font=("Arial", 11, "bold"),
+    command=generate_and_fill,
+    bg="#34C759",
+    fg="white",
+    width=22
+)
+gen_btn.pack(pady=5)
+
 
 window.mainloop()
