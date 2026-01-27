@@ -1,6 +1,6 @@
 # Password Strength & Breach Detection Tool (Python + GUI)
 
-A Python-based cybersecurity tool that analyzes password strength and checks whether the entered password has been found in known data breaches using the HaveIBeenPwned™ k-anonymity method.
+A Python-based cybersecurity tool that analyzes password strength and checks whether the entered password has been found in known data breaches using the HaveIBeenPwned™ k-anonymity method. Iy also contains a cryptographically secure password generator with length slider and clipboard support.
 This project includes a simple and interactive GUI built with Tkinter.
 
 ## 📌 Features
@@ -20,6 +20,12 @@ Entropy
 
 ✔️ Secure password generator using Python's secrets module
 
+✔️ Password length slider (12–32 characters) for user control
+
+✔️ One-click copy-to-clipboard functionality
+
+✔️ Improvement suggestions for weak passwords
+
 ✔️ Fast and lightweight
 <br>
 
@@ -35,7 +41,7 @@ Networking: Requests
 
 Cryptography: SHA-1 Hashing
 
-API: HaveIBeenPwned (range method)
+API: HaveIBeenPwned (k-anonymity model)
 
 
 
@@ -49,15 +55,19 @@ API: HaveIBeenPwned (range method)
 
 -Entropy (bits)
 
-3️⃣ Sends the first 5 characters of the hashed password to HIBP API
+3️⃣ Password is hashed using SHA-1
 
-4️⃣ Searches for matches locally (k-anonymity — safe method)
+4️⃣ Only the first 5 characters of the hash are sent to the HIBP API
 
-5️⃣ Displays:
+5️⃣ Possible matches are checked locally (k-anonymity)
 
+6️⃣ Results are displayed in the GUI :
 Whether breached
 Number of breach occurrences
-Improvement suggestions
+
+7️⃣ Offers stong password generator option with a length slider to enter the size of password required
+
+8️⃣ Password can be copied securely to clipboard
 
 
 
