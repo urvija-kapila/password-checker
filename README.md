@@ -3,30 +3,30 @@
 A Python-based cybersecurity tool that analyzes password strength and checks whether the entered password has been found in known data breaches using the HaveIBeenPwned™ k-anonymity method. Iy also contains a cryptographically secure password generator with length slider and clipboard support.
 This project includes a simple and interactive GUI built with Tkinter.
 
-## 📌 Features
+## Features
 
-✔️ GUI-based interface for user interaction
+- GUI-based interface for user interaction
 
-✔️ Measures password strength based on:
+- Measures password strength based on:
 Length
 Character diversity
 Entropy
 
-✔️ Detects whether the password appears in breached databases
+- Detects whether the password appears in breached databases
 
-✔️ Provides suggestions to improve security
+- Provides suggestions to improve security
 
-✔️ Uses SHA-1 hashing and the HIBP k-anonymity model
+- Uses SHA-1 hashing and the HIBP k-anonymity model
 
-✔️ Secure password generator using Python's secrets module
+- Secure password generator using Python's secrets module
 
-✔️ Password length slider (12–32 characters) for user control
+- Password length slider (12–32 characters) for user control
 
-✔️ One-click copy-to-clipboard functionality
+- One-click copy-to-clipboard functionality
 
-✔️ Improvement suggestions for weak passwords
+- Improvement suggestions for weak passwords
 
-✔️ Fast and lightweight
+- Fast and lightweight
 <br>
 
 ## 🖥️ Tech Stack
@@ -45,7 +45,7 @@ API: HaveIBeenPwned (k-anonymity model)
 
 
 
-## 🎯 How It Works
+## How It Works
 
 1️⃣ User enters a password
 
