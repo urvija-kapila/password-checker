@@ -72,7 +72,7 @@ Number of breach occurrences
 
 
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 Step 1: Clone the repository-
 
@@ -89,7 +89,7 @@ Step 3: Run the GUI-
 python gui.py
 
 
-## 🔐 Security Notes
+## Security Notes
 
 This tool does NOT send your password anywhere.
 It only sends the first 5 characters of its SHA-1 hash, following the k-anonymity principle.
